@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%) 
+
+Dark gray: hsl(0, 0%, 59%)
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 1rem;
+    width: 350px;
+    text-align: center;
+}
+
+.card-header {
+    height: 140px;
+    width: 100%;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-body {
+    margin-top: -15%;
+}
+
+.card-body img {
+    border-radius: 50%;
+    border: white solid .4rem;
+    background-color: white;
+    margin-bottom: 1.25em;
+}
+
+.name-age {
+    font-size: 18px;
+    margin: 0;
+}
+
+.name-age .age {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.city {
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+    margin-top: .75em;   
+    margin-bottom: 2em;
+}
+
+.card-footer {
+    border-top: hsl(227, 10%, 46%, 40%) solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25em 0;
+}
+
+.value {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.meta {
+    font-size: 12px;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+    margin-top: .25rem;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bg {
+    position: absolute;
+    background-image: url(images/bg-pattern-top.svg);
+    background-size: contain;
+    height: 978px;
+    width: 978px;
+    top: -75%;
+    left: -11%;
+    z-index: -1;
+}
+
+.bottom-bg {
+    background-image: url(images/bg-pattern-bottom.svg);
+    position: absolute;
+    background-size: contain;
+    height: 978px;
+    width: 978px;
+    bottom: -75%;
+    right: -15%;
+    z-index: -1;
+}
+
+@media screen and (max-width:375px){
+    .top-bg {
+        position: absolute;
+        background-image: url(images/bg-pattern-top.svg);
+        background-size: contain;
+        height: 489px;
+        width: 489px;
+        top: ;
+        left: -75%;
+        z-index: -1;
+    }
+    .bottom-bg {
+        background-image: url(images/bg-pattern-bottom.svg);
+        position: absolute;
+        background-size: contain;
+        height: 978px;
+        width: 978px;
+        bottom: -75%;
+        right: -15%;
+        z-index: -1;
+    }
+
+}
