@@ -101,8 +101,8 @@ body {
     background-size: contain;
     height: 978px;
     width: 978px;
-    top: -75%;
-    left: -11%;
+    bottom: 30%;
+    right: 53%;
     z-index: -1;
 }
 
@@ -112,31 +112,8 @@ body {
     background-size: contain;
     height: 978px;
     width: 978px;
-    bottom: -75%;
-    right: -15%;
+    top: 50%;
+    left: 50%;
     z-index: -1;
 }
 
-@media screen and (max-width:375px){
-    .top-bg {
-        position: absolute;
-        background-image: url(images/bg-pattern-top.svg);
-        background-size: contain;
-        height: 489px;
-        width: 489px;
-        top: ;
-        left: -75%;
-        z-index: -1;
-    }
-    .bottom-bg {
-        background-image: url(images/bg-pattern-bottom.svg);
-        position: absolute;
-        background-size: contain;
-        height: 978px;
-        width: 978px;
-        bottom: -75%;
-        right: -15%;
-        z-index: -1;
-    }
-
-}
